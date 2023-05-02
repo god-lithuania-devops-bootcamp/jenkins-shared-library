@@ -1,7 +1,7 @@
 package libs;
 
-def helloWorld(String name = "", String build_id=""){
-    sh "echo Hello ${name}. This is ${build_id} build"
+def helloWorld(Map params){
+    sh "echo Hello ${params.name}. This is ${params.build_id} build"
 }
 
 def helloWorld2(){
