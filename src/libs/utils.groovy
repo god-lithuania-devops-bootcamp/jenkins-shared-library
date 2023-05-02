@@ -10,7 +10,7 @@ def helloWorld(Map params){
     if(!(params.name instanceof String)){
         throw new Exception("The name parameter is not a string!!!!!");
     }
-    f(!(params.build_id instanceof String)){
+    if(!(params.build_id instanceof String)){
         throw new Exception("The built_id parameter is not a string!!!!!");
     }
     sh "echo Hello ${params.name}. This is ${params.build_id} build"
