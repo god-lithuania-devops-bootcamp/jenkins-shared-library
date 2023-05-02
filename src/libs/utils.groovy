@@ -1,7 +1,7 @@
 package libs;
 
-def helloWorld(){
-    sh "echo Hello World"
+def helloWorld(String name = "", String build_id=""){
+    sh "echo Hello ${name}. This is ${build_id} build"
 }
 
 def helloWorld2(){
